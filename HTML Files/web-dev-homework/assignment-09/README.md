@@ -1,0 +1,3 @@
+13. A universal selector would effect everything, an element selector would effect every instance of that element on the page, a class selector would effect only things that fit that class, and an id selector would only effect things that have that id tag on them.
+14. The colors I chose were red, white, and gold because those were the colors that seemed to pop up the most in the images that I looked at and in the images that I included on my page.
+15. I started by putting in the bones of my page and making it so I just had to fill in the information I wanted. I then found advertisements that I thought were funny and a little information about them and popped them into the spaces that I had made earlier. 

@@ -1,0 +1,175 @@
+/* Site-Wide Elements*/
+
+body {
+  background-color: lightblue;
+  background-image: url('../images/sitebackground.jpg');
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+}
+
+h1, span {
+  margin: 0;
+  color: saddlebrown;
+  text-align: center;
+}
+
+
+/*Layout Areas*/
+
+form {
+  font-family: 'Playfair Display', serif;
+}
+
+.main-container {
+  width: 68%;
+  max-width: 700px;
+  margin: 3em auto;
+  padding: 3em;
+  background-color: #FFF;
+  border-top: 5px solid #999;
+  border-right: 5px solid #999;
+  border-bottom: 5px solid #666;
+  border-left: 5px solid #999;
+}
+
+p {
+  font-family: 'Playfair Display', serif;
+}
+header {
+
+}
+
+main {
+  text-align: justify;
+  margin: 3em 0;
+
+}
+
+menu {
+  background-color: chocolate;
+
+}
+
+/*Layout Pieces*/
+
+#site-links {
+display: inline-block;
+margin: 0;
+padding: 0;
+}
+#site-links .menu-item {
+  width: 6em;
+  padding: .5em 1em;
+  background-color: chocolate;
+  text-align: center;
+  color: #FFF;
+  display: inline-block;
+  font-family: 'Manrope', sans-serif;
+}
+#site-links .menu-item:hover {
+  color: : salmon;
+  text-decoration: underline overline;
+  text-decoration-style: wavy;
+  background-color: saddlebrown;
+  color: salmon;
+}
+
+#site-links .dropdown {
+  display: inline-block;
+  width: 6em;
+
+}
+#site-links .dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  background-color: saddlebrown;
+}
+#site-links .dropdown-content a {
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+}
+#site-links .dropdown-content a:hover {
+  color: saddlebrown;
+  font-weight: 900;
+}
+#site-links .dropdown:hover .dropdown-content {
+display: block;
+}
+#site-links .dropdown-item {
+  width: 6em;
+  padding: .5em 1em;
+  text-align: center;
+  display: block;
+}
+.dropdown-item:hover {
+  background-color: chocolate;
+}
+
+
+.site-heading {
+  width: 50%;
+  margin: 4em auto;
+  padding: 30px;
+  position: relative;
+  z-index: 1;
+
+  border: 5px double salmon;
+
+  text-align: center;
+}
+
+#site-title {
+  margin: .5em;
+  line-height: 1em;
+  font-size: 3em;
+}
+
+#site-slogan {
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: salmon;
+}
+
+#social-links {
+  display: inline-block;
+  padding: .5em;
+  float: right;
+}
+#social-links .social-item {
+  margin: 0 5px;
+}
+#social-links img {
+  width: 20px;
+  height: 20px;
+  opacity: .5;
+}
+#social-links img:hover {
+  opacity: 1;
+}
+
+/*--bottom socials*/
+
+#social-linksbot {
+  display: inline-block;
+  padding: .5em;
+  float: right;
+}
+#social-linksbot .social-item {
+  margin: 0 5px;
+}
+#social-linksbot img {
+  width: 20px;
+  height: 20px;
+  opacity: .5;
+}
+#social-linksbot img:hover {
+  opacity: 1;
+}
+
+
+
+.site-logo {
+
+}

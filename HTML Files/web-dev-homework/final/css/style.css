@@ -1,0 +1,200 @@
+/* Site-Wide Elements*/
+
+body {
+  background-color: #212121;
+  background-image: url('/images/sitebackground.jpg');
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+}
+
+h1, span {
+  margin: 0;
+  color: black;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/*Layout Areas*/
+
+form {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.gallery {
+margin: 10px 50px;
+width: auto;
+padding: 5px;
+padding-top: 7px;
+background-color: #FFF;
+border-top: 1px solid #999;
+border-right: 1px solid #999;
+border-bottom: 1px solid #999;
+border-left: 1px solid #999;
+align-items:center;
+text-align: center;
+}
+.gallery img {
+  transition: .5s;
+  padding: 15px;
+}
+.gallery img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
+.main-container {
+  opacity: 50%;
+  width: 68%;
+  max-width: 700px;
+  margin: 3em auto;
+  padding: 3em;
+  background-color: #FFF;
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+  border-left: 1px solid #999;
+  align-items:center;
+  text-align: center;
+}
+
+p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bolder;
+}
+header {
+
+}
+
+main {
+  text-align: justify;
+  margin: 3em 0;
+
+}
+
+menu {
+  background-color: #a6acaf;
+
+}
+
+/*Layout Pieces*/
+
+#site-links {
+display: inline-block;
+margin: 0;
+padding: 0;
+}
+#site-links .menu-item {
+  width: 6em;
+  padding: .5em 1em;
+  background-color: #a6acaf;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+}
+#site-links .menu-item:hover {
+  text-decoration-style: wavy;
+  background-color: #cfd8dc;
+}
+
+#site-links .dropdown {
+  display: inline-block;
+  width: 6em;
+
+}
+#site-links .dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  background-color: #cfd8dc;
+}
+#site-links .dropdown-content a {
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+}
+#site-links .dropdown-content a:hover {
+  color: #a6acaf;
+  font-weight: 900;
+}
+#site-links .dropdown:hover .dropdown-content {
+display: block;
+}
+#site-links .dropdown-item {
+  width: 6em;
+  padding: .5em 1em;
+  text-align: center;
+  display: block;
+}
+.dropdown-item:hover {
+  background-color: black;
+}
+
+
+.site-heading {
+  width: 50%;
+  margin: 4em auto;
+  padding: 30px;
+  position: relative;
+  z-index: 1;
+
+  border: 5px double #cfd8dc;
+
+  text-align: center;
+}
+
+#site-title {
+  margin: .5em;
+  line-height: 1em;
+  font-size: 3em;
+}
+
+#site-slogan {
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #cfd8dc;
+}
+
+#social-links {
+  display: inline-block;
+  padding: .5em;
+  float: right;
+}
+#social-links .social-item {
+  margin: 0 5px;
+}
+#social-links img {
+  width: 20px;
+  height: 20px;
+  opacity: .5;
+}
+#social-links img:hover {
+  opacity: 1;
+}
+
+/*--bottom socials*/
+
+#social-linksbot {
+  display: inline-block;
+  padding: .5em;
+  float: right;
+  background-color: #a6acaf;
+}
+#social-linksbot .social-item {
+  margin: 0 5px;
+}
+#social-linksbot img {
+  width: 20px;
+  height: 20px;
+  opacity: .5;
+}
+#social-linksbot img:hover {
+  opacity: 1;
+}
+
+
+
+.site-logo {
+
+}

@@ -1,0 +1,9 @@
+Hello my name is Ben Vanderbosch
+
+1. The internet is the total collection of networks and the web is the information that is accessed on the internet. 
+
+2. When you enter Google.com into your search bar, your request is sent through your router and possibly many more routers until it reaches Google's server, then their server sends back whatever you requested. These requests are sent as packets which is when your information such as a photo is broken up into pieces. This was actually the only thing I knew about previously when watching the video because video games lag because of packet loss. 
+
+3. Directories are basically folders for files on the internet. Directories hold files.
+
+4. Using VCS is beneficial because it allows everyone who is working on the same set of files to merge their changes into one rather than having one person work on one thing at a time. In general it just helps to avoid errors and mistakes. 

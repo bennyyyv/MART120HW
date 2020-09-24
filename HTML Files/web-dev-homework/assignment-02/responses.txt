@@ -1,0 +1,7 @@
+Information is sent on the internet in the form of bits.
+
+DNS is pretty much a phonebook for IP addresses. It remembers the IP addresses for websites so that we don't have to.
+
+A cookie is just a small piece of data that a website stores so that it can record the user's activity or any other useful information or tendencies.
+
+The three basic parts of a URL are the: protocol, domain name, and path.
