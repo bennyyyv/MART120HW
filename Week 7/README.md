@@ -1,3 +1,0 @@
-1. I have really liked learning html so far! It definitely is getting a little repetitive at this point but it is how it is. It has been most difficult for me to learn how to do links for some reason. There's just something about it that I can't always get right without looking back at my previous work.
-2. I'm definitely excited to learn how to make my pages look less garbage because at the moment they're looking like something from 2005.
-3. I started out by building the bones of my pages and then I found the source material I wanted and plugged it all in. After that I did some little cosmetic tweaks like color and alignment to make the pages look a little nicer. 

@@ -8,24 +8,25 @@
     <meta name="description" content="This is a Website">
     <meta name="author" content="Ben Vanderbosch">
     <title>Contact</title>
-    <style media="screen">
-      body {
-background-color: powderblue;
-text-align: center;
-}
-.container {
-background-color: white;
-text-align: center;
-width: 600px;
-margin: auto;
-padding: 20px;
-border: 1px solid black;
-}
-    </style>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     </head>
 
     <body>
-      <h2>Contact</h2>
+
+      <menu id="navigation">
+      <div id="site-links">
+      <nav>
+      <a href="./index.html" class="menu-item"> To Home Page</a>  <a href="./secondpage.html" class="menu-item"> To Second Page</a>  <a href="./contact.html" class="menu-item"> To Contact Page</a>
+      </nav>
+      </div>
+    </div>
+    </menu>
+
+      <h1>Contact</h1>
+
+      <div class="main-container">
+
       <form class="" action="https://example.com/registration.php" method="post">
         What is your name:
         <input type="text" name="name" maxlength="25">
@@ -47,17 +48,9 @@ border: 1px solid black;
 <input type="radio" name="yes_no">No</input>
 </p>
         <br><br>
-        <input type="button" value="Submit" img src="./images/submit-button.png">
+        <button type="button" class="btn btn-primary">Submit</button>
       </form>
-      <br>
-      <div class="container">
-      <nav>
-      <a href="./index.html"> To Home Page</a>
-      <br>
-      <a href="./secondpage.html"> To Second Page</a>
-      <br>
-      <a href="./contact.html"> To Contact Page</a>
-      </nav>
       </div>
+
     </body>
     </html>
