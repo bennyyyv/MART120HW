@@ -10,6 +10,33 @@
     <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script>
+      function getInformation() {
+        var yourName = document.getElementById("yourName").value;
+
+        if (yourName == "") {
+        window.alert("Please enter a name");
+        document.getElementById("yourName").style.backgroundColor = "red";
+        document.getElementById("yourName").focus();
+      }
+      else {
+        document.getElementById("yourName").style.backgroundColor = "white";
+      }
+
+      if (yourEmail == "") {
+      window.alert("Please enter an Email");
+      document.getElementById("yourEmail").style.backgroundColor = "red";
+      document.getElementById("yourEmail").focus();
+    }
+    else {
+      document.getElementById("yourEmail").style.backgroundColor = "white";
+      }
+
+}
+    </script>
+
+
     </head>
 
     <body>
@@ -27,29 +54,22 @@
 
       <div class="main-container">
 
-      <form class="" action="https://example.com/registration.php" method="post">
-        What is your name:
-        <input type="text" name="name" maxlength="25">
+        Name: <input type="text" id="yourName" placeholder="Enter your name here..." required>
         <br><br>
-        What is your Email:
-        <input type="text" name="email" maxlength="25">
+        Email: <input type="email" placeholder="Enter your email here..." required>
+
         <br><br>
-        Enter comment below:
-        <br>
-        <textarea name="name" rows="15" cols="80">
-          Wow, this is an amazing website that definitely deserves and A..
-        </textarea>
-        <br> <br>
         <label for="yes_no_radio">Do you agree to the terms?</label>
-<p>
-<input type="radio" name="yes_no" checked>Yes</input>
-</p>
-<p>
-<input type="radio" name="yes_no">No</input>
-</p>
+
+        <input type="radio" name="yes_no" checked>Yes</input>
+
+
+        <input type="radio" name="yes_no">No</input>
+
         <br><br>
-        <button type="button" class="btn btn-primary">Submit</button>
-      </form>
+        <button id="mySubmit" onclick="getInformation();">Submit</button>
+        <br>
+
       </div>
 
     </body>

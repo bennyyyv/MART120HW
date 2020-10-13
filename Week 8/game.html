@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,
+    initial-scale=1.0">
+    <meta name="description" content="This is a Website">
+    <meta name="author" content="Ben Vanderbosch">
+    <title>Game</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script>
+      var actualAnswer;
+      function printQuestion() {
+        var number1, number2;
+        for(var i = 0; i < 5; i++)
+        {
+          number1 = Math.floor(Math.random() * 10);
+          number2 = Math.floor(Math.random() * 10);
+        }
+
+        actualAnswer = number1 + number2;
+        document.getElementById("question").innerHTML = "What is " + number1 + " + " + number2 + "?";
+      }
+
+      function checkAnswer() {
+        var myAnswer = document.getElementById("answer").value;
+        if (myAnswer == actualAnswer)
+        {
+        document.getElementById("message").innerHTML = "Good Job! You answered " + myAnswer;
+        printQuestion();
+        document.getElementById("answer").value = "";
+        document.getElementById("correct").innerHTML = "0" + 1;
+}
+        else {
+          document.getElementById("message").innerHTML = "Nice Try! But the actual answer is " + actualAnswer;
+          document.getElementById("incorrect").innerHTML = "0" + 1;
+        }
+            }
+    </script>
+
+
+    </head>
+
+    <body onload="printQuestion();">
+
+      <menu id="navigation">
+      <div id="site-links">
+      <nav>
+      <a href="./index.html" class="menu-item"> To Home Page</a>  <a href="./secondpage.html" class="menu-item"> To Second Page</a>  <a href="./contact.html" class="menu-item"> To Contact Page</a>
+      </nav>
+      </div>
+    </menu>
+
+      <h1>Contact</h1>
+
+      <div id="question" class="main-container">  </div>
+      <div class="main-container">
+        <br>
+        Your Answer <input type="input" id="answer">
+        <br>
+        <button id="mySubmit" onclick="checkAnswer();">Submit</button>
+      </div>
+      <div id="message"></div>
+      <br>
+      <div id="correct"></div>
+      <br>
+      <div id="incorrect"></div>
+    </body>
+    </html>
