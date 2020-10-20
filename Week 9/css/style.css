@@ -1,0 +1,74 @@
+/* Site-Wide Elements*/
+
+body {
+  background-color: lightblue;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+}
+
+h1, span {
+  margin: 0;
+  color: saddlebrown;
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+/*Layout Areas*/
+
+.main-container {
+  width: 68%;
+  max-width: 700px;
+  margin: 3em auto;
+  padding: 3em;
+  background-color: #FFF;
+  border-top: 5px solid #999;
+  border-right: 5px solid #999;
+  border-bottom: 5px solid #666;
+  border-left: 5px solid #999;
+}
+
+.main-container2 {
+  width: 68%;
+  max-width: 700px;
+  margin: 3em auto;
+  padding: 3em;
+  background-color: #FFF;
+  border-top: 5px solid #999;
+  border-right: 5px solid #999;
+  border-bottom: 5px solid #666;
+  border-left: 5px solid #999;
+  background-image: url("../images/background.jpg");
+}
+
+main {
+  text-align: justify;
+  margin: 3em 0;
+}
+
+menu {
+  background-color: chocolate;
+  align-content: center;
+}
+
+/*Layout Pieces*/
+
+#site-links {
+display: inline-block;
+margin: 0;
+padding: 0;
+}
+#site-links .menu-item {
+  width: 6em;
+  padding: .5em 1em;
+  background-color: chocolate;
+  text-align: center;
+  color: #FFF;
+  display: inline-block;
+  font-family: 'Manrope', sans-serif;
+}
+#site-links .menu-item:hover {
+  color: : salmon;
+  background-color: saddlebrown;
+  color: salmon;
+}
