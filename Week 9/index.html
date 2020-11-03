@@ -1,0 +1,83 @@
+<html>
+
+    <head>
+        <title>
+            First p5.js page
+        </title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+        <script>
+          function setup()
+          {
+              createCanvas(500, 600);
+          }
+
+          function draw()
+          {
+              background(209, 252, 255);
+              text("hello", 10,80);
+
+              // head
+              fill(255, 221, 191);
+              circle(250,100,175);
+
+              // eyes
+              stroke(29, 82, 0);
+              strokeWeight(10);
+              point(200,75);
+              point(285,75);
+
+              // nose
+              stroke(0)
+              point(245,90);
+
+              // mouth
+              stroke(0)
+              fill(0)
+              line(230, 140, 280, 140)
+
+              line(280, 135, 280, 145)
+
+              // body
+              stroke(0)
+              fill(10, 24, 120);
+              rect(200,185,100,150);
+
+              // decoration
+              stroke(0)
+              fill(255);
+              rect(220,205,60,110);
+
+              fill(10, 24, 120)
+              rect(240,225,20,70);
+              // right arm
+              stroke(0)
+              fill(10, 24, 120);
+              rect(300,195,50,10);
+              // left arm
+              stroke(0)
+              rect(150,195,50,10);
+              // left leg
+              stroke(0)
+              rect(200,335,10,50);
+              // right leg
+              stroke(0)
+              rect(290,335,10,50);
+
+              // feet or something
+              stroke(0)
+              triangle(200, 400, 200, 390, 220, 400);
+
+              triangle(290, 400, 290, 390, 310, 400);
+
+              fill(120);
+              textSize(22);
+              text("Ben Vanderbosch",270,500 );
+
+
+          }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
