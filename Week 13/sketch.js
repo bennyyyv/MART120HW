@@ -27,7 +27,6 @@ var sqYSpeed;
 //declare the arrays
 var shapeXs = [];
 var shapeYs = [];
-var shapeDiameters = [];
 
 var shapeXSpeeds = [];
 var shapeYSpeeds = [];
@@ -48,7 +47,6 @@ function setup()
             shapeYSpeeds[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
             shapeXs[i] = getRandomNumber(500);
             shapeYs[i] = getRandomNumber(600);
-            shapeDiameters[i] = getRandomNumber(30);
     }
 
 }
@@ -60,27 +58,7 @@ function draw()
     fill(0);
 
 //random shapes
-for (var i = 0; i < shapeXs.length; i++) {
-        circle(shapeXs[i], shapeYs[i], diameters[i]);
-        shapeXSpeeds[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
-        shapeYSpeeds[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
-        // move the shape
-        shapeXs[i] += shapeXSpeeds[i];
-        shapeYs[i] += shapeYSpeeds[i];
-        // check to see if the shape has gone out of bounds
-        if (shapeXs[i] > width) {
-            shapeXs[i] = 0;
-        }
-        if (shapeXs[i] < 0) {
-            shapeXs[i] = width;
-        }
-        if (shapeYs[i] > height) {
-            shapeYs[i] = 0;
-        }
-        if (shapeYs[i] < 0) {
-            shapeYs[i] = height;
-        }
-    }
+randomShapes();
 
 //createBorders
 createBorders();
@@ -113,6 +91,31 @@ mouseShape();
 ////////////////////////////////////////////////////////
 
 //Functions//
+function randomShapes()
+{
+  for (var i = 0; i < shapeXs.length; i++) {
+          square(shapeXs[i], shapeYs[i], 50;
+          shapeXSpeeds[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
+          shapeYSpeeds[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
+          // move the shape
+          shapeXs[i] += shapeXSpeeds[i];
+          shapeYs[i] += shapeYSpeeds[i];
+          // check to see if the shape has gone out of bounds
+          if (shapeXs[i] > width) {
+              shapeXs[i] = 0;
+          }
+          if (shapeXs[i] < 0) {
+              shapeXs[i] = width;
+          }
+          if (shapeYs[i] > height) {
+              shapeYs[i] = 0;
+          }
+          if (shapeYs[i] < 0) {
+              shapeYs[i] = height;
+          }
+      }
+}
+
 function exitMessage()
 {
   textSize(16);
