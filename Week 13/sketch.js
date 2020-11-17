@@ -24,6 +24,14 @@ var sqY = 240;
 var sqXSpeed;
 var sqYSpeed;
 
+//declare the arrays
+var shapeXs = [];
+var shapeYs = [];
+var shapeDiameters = [];
+
+var shapeXSpeeds = [];
+var shapeYSpeeds = [];
+
 // mouse click shape
 var mouseShapeX;
 var mouseShapeY;
@@ -33,6 +41,16 @@ var mouseShapeY;
 function setup()
 {
     createCanvas(500, 600);
+
+//add values to the arrays
+    for (var i = 0; i < 50; i++) {
+            shapeXSpeeds[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
+            shapeYSpeeds[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
+            shapeXs[i] = getRandomNumber(500);
+            shapeYs[i] = getRandomNumber(600);
+            shapeDiameters[i] = getRandomNumber(30);
+    }
+
 }
 
 function draw()
@@ -40,6 +58,29 @@ function draw()
     background(120,45,78);
     stroke(0);
     fill(0);
+
+//random shapes
+for (var i = 0; i < shapeXs.length; i++) {
+        circle(shapeXs[i], shapeYs[i], diameters[i]);
+        shapeXSpeeds[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
+        shapeYSpeeds[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
+        // move the shape
+        shapeXs[i] += shapeXSpeeds[i];
+        shapeYs[i] += shapeYSpeeds[i];
+        // check to see if the shape has gone out of bounds
+        if (shapeXs[i] > width) {
+            shapeXs[i] = 0;
+        }
+        if (shapeXs[i] < 0) {
+            shapeXs[i] = width;
+        }
+        if (shapeYs[i] > height) {
+            shapeYs[i] = 0;
+        }
+        if (shapeYs[i] < 0) {
+            shapeYs[i] = height;
+        }
+    }
 
 //createBorders
 createBorders();
